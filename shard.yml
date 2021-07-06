@@ -3,9 +3,12 @@ version: 0.3.0
 
 authors:
   - y2k2mt <y2.k2mt@gmail.com>
+  - Benjamin Clos <benjamin.clos@gmail.com>
 
 description: |
   A Crystal shard for AWS System Manager
+
+crystal: 1.0.0
 
 dependencies:
   awscr-signer:
@@ -15,4 +18,4 @@ development_dependencies:
   ameba:
     github: veelenga/ameba
 
-icense: MIT
+license: MIT
