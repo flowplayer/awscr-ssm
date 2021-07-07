@@ -1,5 +1,5 @@
 require "spec"
-require "../awscr-ssm"
+require "../src/ssm"
 
 describe Awscr::SSM do
   cli = Awscr::SSM::Client.new("ap-northeast-1")

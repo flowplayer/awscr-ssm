@@ -8,15 +8,10 @@ module Awscr
     struct SimpleCredentials
       include Credentials
 
+      getter key : String 
+      getter secret : String
+
       def initialize(@key : String, @secret : String)
-      end
-
-      def key
-        @key
-      end
-
-      def secret
-        @secret
       end
     end
 
@@ -26,11 +21,11 @@ module Awscr
       def initialize
       end
 
-      def key
+      def key : String
         ENV["AWS_ACCESS_KEY_ID"]
       end
 
-      def secret
+      def secret : String
         ENV["AWS_SECRET_ACCESS_KEY"]
       end
     end
